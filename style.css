@@ -34,3 +34,26 @@ body{
     cursor: pointer;
     margin: 10px;
 }
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+.display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+.equal {
+    width: 160px;
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.reset {
+    width: 160px;
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
