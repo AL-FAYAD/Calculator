@@ -5,10 +5,15 @@ body{
     box-sizing: border-box;
 }
 
+.dis{
+    background-color: #b61c1c;
+    background: #b61111;
+}
+
 .container{
     width: 100%;
     height: 100vh;
-    background: #e3f9ff;
+    background: #4d8b9c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +22,7 @@ body{
 
 .calculator{
     background: #3a4452;
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
 }
 .calculator form input{
@@ -34,26 +39,19 @@ body{
     cursor: pointer;
     margin: 10px;
 }
-.display{
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px;
-}
-.display input{
-    text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: none;
-}
-.equal {
-    width: 160px;
-    background: #3a4452;
-    padding: 20px;
+
+.calculator form input[name="display"] {
+    width: 100%; /* Make it span the entire width of the calculator */
+    height: 70px; /* Make it taller than the buttons */
+    border: none;
+    outline: none;
     border-radius: 10px;
-}
-.reset {
-    width: 160px;
-    background: #3a4452;
-    padding: 20px;
-    border-radius: 10px;
+    margin-bottom: 20px; /* Add space below the display */
+    padding: 10px; /* Add some padding inside the input */
+    font-size: 24px; /* Larger font for readability */
+    color: #fff; /* White text color */
+    background: #3a4452; /* Match the calculator background */
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: right; /* Align text to the right */
 }
